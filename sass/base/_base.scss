@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #2D2D2D;
+    --secondary-color: #1F1249;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tab){font-size: 56.25%;}
+    @include respond(mobile){font-size: 50%;}
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(145deg, rgba(246,159,161,1) 0%, rgba(202,212,252,1) 75%);
+}
+
+ul{list-style: none;}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

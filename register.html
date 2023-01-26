@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up!</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box__img">
+            <img src="./assets/images/register.png" alt="image holder"/>
+        </div>
+
+        <div class="box__content">
+            <h3 class="sub-title">Create account</h3>
+            <p class="text">
+                Go ahead and sign up, let everyone know how awesome you are! 
+            </p>
+            <form method="post" id="register-form">
+                <div class="input-group" id="username">
+                    <div class="input-container">
+                        <i class="fa-regular fa-user"></i>
+                        <input placeholder="Username"/>
+                    </div>
+                    <small class="error hidden"></small>
+                </div>
+
+                <div class="input-group" id="email">
+                    <div class="input-container">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input placeholder="Email"/>
+                    </div>
+                    <small class="error hidden"></small>
+                </div>
+
+                <div class="input-group" id="password">
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock"></i>
+                        <input placeholder="Password" type="password"/>
+                    </div>
+                    <small class="error hidden"></small>
+                </div>
+
+                <div class="input-group" id="confirmPassword">
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock"></i>
+                        <input placeholder="Confirm Password" type="password"/>
+                    </div>
+                    <small class="error hidden"></small>
+                </div>
+                <div class="loader hidden"></div>
+                <button class="btn btn-blue btn-block">
+                    Create Account
+                </button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="./js/register.js"></script>
+</body>
+</html>

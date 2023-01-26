@@ -1,0 +1,17 @@
+.mb-small{margin-bottom: 2rem;}
+.mb-medium{margin-bottom: 3.5rem;}
+.mb-large{margin-bottom: 5rem;}
+
+.hide-for-mobile{
+    @include respond(mobile){display:none;}
+}
+
+.hide-for-desktop{
+    display: none;
+    @include respond(mobile){display: block;}
+}
+
+.hidden{
+    display: none;
+}
+

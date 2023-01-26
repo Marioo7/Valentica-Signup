@@ -1,0 +1,36 @@
+body{
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.4;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 3.9rem;
+    color : var(--primary-color);
+
+    @include respond(mobile){
+        text-align: center;
+ 
+    }
+}
+
+.sub-title{
+    font-size: 3rem;
+    color : var(--primary-color);
+
+    @include respond(mobile){
+        text-align: center;
+ 
+    }
+}
+
+.text{
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+
+    @include respond(mobile){
+        text-align: center;
+    }
+}

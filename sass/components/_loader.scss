@@ -1,0 +1,15 @@
+.loader{
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem auto;
+    border: .4rem solid #444;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

@@ -1,0 +1,23 @@
+.btn {
+    padding: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-blue{
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9CADF2;
+    color: #fff;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.12);
+}

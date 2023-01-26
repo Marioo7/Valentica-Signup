@@ -1,0 +1,32 @@
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 4rem;
+    gap: 60px;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    max-width: 95%;
+    margin: 6rem auto;
+    width: 80rem;
+
+    > * {
+        flex: 1;
+    }
+
+    @include respond(mobile){
+        flex-direction: column;
+        width: 40rem;
+        gap: 4rem;
+        padding : 0 0 2rem 0;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 85%;
+    }
+}
